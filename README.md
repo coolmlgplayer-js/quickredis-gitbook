@@ -16,15 +16,15 @@ npm install quickredis-db
 
 ```javascript
 // Creating the redis client
-const redis = require('quickredis-db');
-const client = redis.createClient();
+const redis = require('quickredis-db')
+const client = redis.createClient()
 
-client.once('ready', () => console.log('Connected to database'));
+client.once('ready', () => console.log('Connected to database'))
 
 // Setting a value
-client.set('foo', 'bar').then(console.log); // 'bar'
+client.set('foo', 'bar').then(console.log)// 'bar'
 
 // Reading a value
-client.get('foo').then(console.log); // 'bar'
+client.get('foo').then(console.log) // 'bar'
 ```
 
